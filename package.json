@@ -1,0 +1,18 @@
+{
+  "name": "dayz-logger",
+  "version": "1.0.0",
+  "description": "DayZ Logger permet d'envoyer les logs d'un serveur DayZ",
+  "main": "bot.js",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.js": "^11.6.4",
+    "dotenv": "^8.2.0",
+    "tail": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node --trace-warnings bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Animate Mp4#2361",
+  "license": "ISC"
+}
