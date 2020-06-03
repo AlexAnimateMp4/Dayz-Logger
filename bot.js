@@ -43,7 +43,7 @@ client.once("ready", () => {
     });
 
   console.log("Dayz Logger est prêt !");
-}); // Ceci est l'évènement 'ready (prêt)' quand il est exécutez il définie un statut personnéliés et collecte les donnés du fichier logs définie dans config.js
+}); // Ceci est l'évènement 'ready (prêt)' quand il est exécutez il définie un statut personnalisé et collecte les donneés du fichier logs définie dans config.js
 
 client.login(TOKEN); // Permet de connecté le bot à l'API de Discord
 
