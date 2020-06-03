@@ -19,7 +19,7 @@
 
 ### Étape BONUS:
 
-> Dans le fichier startserver.bat (si vous en avez un), il est possible de lancer le bot en même temps que le serveur.<br>
+> Dans le fichier `startserver.bat` (si vous en avez un), il est possible de lancer le bot en même temps que le serveur.<br>
 > Pour ce faire, je vous donne un exemple de startserver.bat:
 
 ```batch
