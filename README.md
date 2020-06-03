@@ -4,12 +4,12 @@
 
 ### Étape 0:
 
-> `Node.js` est OBLIGATOIRE pour faire fonctionner Dayz Logger !!!
+> `Node.js` est OBLIGATOIRE pour faire fonctionner Dayz Logger !!!<br>
 > Lien de téléchargement: https://nodejs.org/fr/download/
 
 ### Étape 1:
 
-> Remplacer les valeurs dans le fichier `.env`
+> Remplacer les valeurs dans le fichier `.env`<br>
 > Si besoin d'aide voir le fichier `config.js`
 
 ### Étape 2:
@@ -19,7 +19,7 @@
 
 ### Étape BONUS:
 
-> Dans le fichier startserver.bat (si vous en avez un), il est possible de lancer le bot en même temps que le serveur.
+> Dans le fichier startserver.bat (si vous en avez un), il est possible de lancer le bot en même temps que le serveur.<br>
 > Pour ce faire, je vous donne un exemple de startserver.bat:
 
 ```batch
@@ -56,5 +56,5 @@ cd E:\Jeux\Steam\steamapps\common\DayZServer
 
 > Le paramètre `-adminlog` doit être impérativement déclaré pour que Dayz Logger fonctionne !!!
 
-#### Pour plus de précision, Discord: Alex Animate Mp4#2361# Dayz Logger
+#### Pour plus de précision, Discord: Alex Animate Mp4#2361
 #### ORIGINAL OPEN SOURCE: https://github.com/GrosTon1/DayZ-BigBrother
