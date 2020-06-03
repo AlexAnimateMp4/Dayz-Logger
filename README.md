@@ -55,3 +55,4 @@ cd E:\Jeux\Steam\steamapps\common\DayZServer
 > Le paramètre `-adminlog` doit être impérativement déclaré pour que Dayz Logger fonctionne !!!
 
 #### Pour plus de précision, Discord: Alex Animate Mp4#2361# Dayz Logger
+#### ORIGINAL OPEN SOURCE: https://github.com/GrosTon1/DayZ-BigBrother
