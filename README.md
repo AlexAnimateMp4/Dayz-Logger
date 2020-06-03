@@ -1,6 +1,6 @@
 # Dayz Logger
 
-> DayZ Logger permet d'envoyer les logs d'un serveur DayZ
+> DayZ Logger permet d'envoyer les logs d'un serveur DayZ dans un salon discord
 
 ### Étape 0:
 
