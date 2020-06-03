@@ -9,7 +9,7 @@ const {
   CHANNEL_NAME,
 } = require("./config.js"); // Permet de récuperé les valeurs inscrites dans le fichier config.js
 const client = new Discord.Client(); // Définie le client (bot)
-const PACKAGE = require("./package.json");
+const PACKAGE = require("./package.json"); // Importe le fichier package.json pour y récupéré des informations
 
 let logsQueue = []; // Liste les logs
 let logBeingTreated = false; // NE PAS MODIFIER !!!
