@@ -1,5 +1,7 @@
 # Dayz Logger
 
+> DayZ Logger permet d'envoyer les logs d'un serveur DayZ
+
 ### Étape 0:
 
 > `Node.js` est OBLIGATOIRE pour faire fonctionner Dayz Logger !!!
