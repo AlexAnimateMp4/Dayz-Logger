@@ -1,3 +1,5 @@
+@echo off
+chcp 65001 > NUL
 if not exist node_modules\ (
     ECHO Le dossier node_modules n'existe pas dans le répertoire, Installation des modules...
     CALL npm install
