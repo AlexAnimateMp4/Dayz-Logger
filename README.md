@@ -9,6 +9,7 @@
 
 ### Étape 1:
 
+> Renommer le fichier `.env.example` par `.env`<br>
 > Remplacer les valeurs dans le fichier `.env`<br>
 > Si besoin d'aide voir le fichier `config.js`
 
