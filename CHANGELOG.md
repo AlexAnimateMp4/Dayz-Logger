@@ -1,4 +1,4 @@
-# Dayz Logger Change Logs
+# Dayz Logger Change Log
 
 ### 1.2.0
 
