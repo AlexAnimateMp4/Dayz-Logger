@@ -1,6 +1,6 @@
 <a name="top"></a>
 <div align="center">
-    <a align="center" href="https://github.com/AlexAnimateMP4/Dayz-Logger"><img align="center" src="https://i.imgur.com/6NQr7nj.png" alt="Logo"></a>
+    <a align="center" href="https://github.com/AlexAnimateMP4/Dayz-Logger"><img align="center" src="./assets/DayZ Logger README.png" alt="Logo"></a>
     <a align="center" href="https://github.com/AlexAnimateMP4/Dayz-Logger/commits/master"><img align="center" src="https://img.shields.io/github/last-commit/AlexAnimateMP4/Dayz-Logger" alt="DayZ Logger" /></a>
     <a align="center" href="https://github.com/AlexAnimateMP4/Dayz-Logger/releases/latest"><img align="center" src="https://img.shields.io/github/release-date/AlexAnimateMP4/Dayz-Logger" alt="DayZ Logger" /></a>
     <a align="center"><img align="center" src="https://img.shields.io/github/downloads/AlexAnimateMP4/Dayz-Logger/total" alt="DayZ Logger" /></a>
