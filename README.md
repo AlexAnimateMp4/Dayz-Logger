@@ -2433,6 +2433,8 @@ Cela devrait ressembler à ceci:
 <a name="contact"></a>
 <h2>Contact - <a href="#crédit">suivant</a> | <a href="#contributeurs">précédent</a> | <a href="#top">début</a> | <a href="#bottom">fin</a></h2>
 
+<p>Discord: Alex Animate Mp4#2361<br>Twitter: <a href="https://twitter.com/AlexAnimateMp4" target="_blank">Alex Animate Mp4</a><br></p>
+
 <a name="crédit"></a>
 <h2>Crédit - <a href="#licence">suivant</a> | <a href="#contact">précédent</a> | <a href="#top">début</a> | <a href="#bottom">fin</a></h2>
 
