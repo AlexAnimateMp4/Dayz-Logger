@@ -1,5 +1,5 @@
 {
-    "private": "true",
+    "private": "false",
     "name": "dayz-logger",
     "version": "1.2.0",
     "description": "Récupère les logs d'un serveur DayZ et les transmets à Discord avec la magie des webhooks !",
