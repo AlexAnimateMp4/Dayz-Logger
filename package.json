@@ -1,0 +1,49 @@
+{
+    "private": "true",
+    "name": "dayz-logger",
+    "version": "1.2.0",
+    "description": "Récupère les logs d'un serveur DayZ et les transmets à Discord avec la magie des webhooks !",
+    "main": "index.js",
+    "engines": {
+        "node": ">= 14.15.0",
+        "npm": ">= 6.14.0"
+    },
+    "scripts": {
+        "start": "node --trace-warnings index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexAnimateMP4/Dayz-Logger.git"
+    },
+    "homepage": "https://github.com/AlexAnimateMP4/Dayz-Logger#readme",
+    "bugs": {
+        "url": "https://github.com/AlexAnimateMP4/Dayz-Logger/issues"
+    },
+    "keywords": [],
+    "files": [
+        ".env",
+        ".gitignore",
+        "api.js",
+        "events.js",
+        "functions.js",
+        "index.js",
+        "languages.js",
+        "package.json",
+        "settings.js"
+    ],
+    "author": {
+        "name": "Alex Animate Mp4",
+        "discord": "Alex Animate Mp4#2361",
+        "url": "https://github.com/AlexAnimateMP4"
+    },
+    "contributors": [],
+    "license": "MPL-2.0",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "envfile": "^6.14.0",
+        "tail": "^2.2.0"
+    }
+}
