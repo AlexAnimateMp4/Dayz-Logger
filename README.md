@@ -90,7 +90,7 @@ Cela devrait ressembler à ceci:
 
 <pre><code>start "DayZServer" /affinity FF /high "DayZServer_x64.exe" -config=serverDZ.cfg -profiles=profile -doLogs -adminLog</code></pre>
 
-<p>Le fichier <a href="./env.example" target="_blank">.env</a> (que vous devrez renommer <code>.env</code>) vous permet de modifier les paramètres de DayZ Logger tout en gardant les valeurs secrète.<br>
+<p>Le fichier <a href="./env.example" target="_blank">env.example</a> (que vous devrez renommer <code>.env</code>) vous permet de modifier les paramètres de DayZ Logger tout en gardant les valeurs secrète.<br>
 <a href="#utilisation">Voir la catégorie utilisation pour plus d'informations sur l'utilisation.</a></p>
 
 <a name="utilisation"></a>
