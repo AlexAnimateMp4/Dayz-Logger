@@ -23,7 +23,6 @@
     "keywords": [],
     "files": [
         ".env",
-        ".gitignore",
         "api.js",
         "events.js",
         "functions.js",
