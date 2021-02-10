@@ -1,16 +1,16 @@
 const path = require(`path`);
 const events = require(`events`);
 const discord = require(`discord.js`);
-const EventEmitter = new events.EventEmitter();
+const EVENTEMITTER = new events.EventEmitter();
 const functions = require(path.join(__dirname, `functions.js`));
 const settings = require(path.join(__dirname, `settings.js`));
 const languages = require(path.join(__dirname, `languages.js`));
 
-EventEmitter.on(`READY`, (DATA) => {
+EVENTEMITTER.on(`READY`, (DATA) => {
     return;
 });
 
-EventEmitter.on(`CONNECTED`, (DATA) => {
+EVENTEMITTER.on(`CONNECTED`, (DATA) => {
     if (settings.GET(`CONNECTEDDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`CONNECTEDINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -22,7 +22,7 @@ EventEmitter.on(`CONNECTED`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DISCONNECTED`, (DATA) => {
+EVENTEMITTER.on(`DISCONNECTED`, (DATA) => {
     if (settings.GET(`DISCONNECTEDDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DISCONNECTEDINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -34,7 +34,7 @@ EventEmitter.on(`DISCONNECTED`, (DATA) => {
     };
 });
 
-EventEmitter.on(`CHAT`, (DATA) => {
+EVENTEMITTER.on(`CHAT`, (DATA) => {
     if (settings.GET(`CHATDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`CHATINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -47,7 +47,7 @@ EventEmitter.on(`CHAT`, (DATA) => {
     };
 });
 
-EventEmitter.on(`CONSCIOUS`, (DATA) => {
+EVENTEMITTER.on(`CONSCIOUS`, (DATA) => {
     if (settings.GET(`CONSCIOUSDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`CONSCIOUSINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -62,7 +62,7 @@ EventEmitter.on(`CONSCIOUS`, (DATA) => {
     };
 });
 
-EventEmitter.on(`UNCONSCIOUS`, (DATA) => {
+EVENTEMITTER.on(`UNCONSCIOUS`, (DATA) => {
     if (settings.GET(`UNCONSCIOUSDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`UNCONSCIOUSINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -77,7 +77,7 @@ EventEmitter.on(`UNCONSCIOUS`, (DATA) => {
     };
 });
 
-EventEmitter.on(`HIT_SHOT`, (DATA) => {
+EVENTEMITTER.on(`HIT_SHOT`, (DATA) => {
     if (settings.GET(`HITSHOTDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`HITSHOTINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -103,7 +103,7 @@ EventEmitter.on(`HIT_SHOT`, (DATA) => {
     };
 });
 
-EventEmitter.on(`HIT_MELEE_PLAYER`, (DATA) => {
+EVENTEMITTER.on(`HIT_MELEE_PLAYER`, (DATA) => {
     if (settings.GET(`HITMELEEPLAYERDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`HITMELEEPLAYERINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -127,7 +127,7 @@ EventEmitter.on(`HIT_MELEE_PLAYER`, (DATA) => {
     };
 });
 
-EventEmitter.on(`HIT_MELEE`, (DATA) => {
+EVENTEMITTER.on(`HIT_MELEE`, (DATA) => {
     if (settings.GET(`HITMELEEDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`HITMELEEINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -146,7 +146,7 @@ EventEmitter.on(`HIT_MELEE`, (DATA) => {
     };
 });
 
-EventEmitter.on(`HIT_FALL`, (DATA) => {
+EVENTEMITTER.on(`HIT_FALL`, (DATA) => {
     if (settings.GET(`HITFALLDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`HITFALLINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -162,7 +162,7 @@ EventEmitter.on(`HIT_FALL`, (DATA) => {
     };
 });
 
-EventEmitter.on(`HIT_GENERIC`, (DATA) => {
+EVENTEMITTER.on(`HIT_GENERIC`, (DATA) => {
     if (settings.GET(`HITGENERICDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`HITGENERICINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -180,7 +180,7 @@ EventEmitter.on(`HIT_GENERIC`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_SHOT`, (DATA) => {
+EVENTEMITTER.on(`DEATH_SHOT`, (DATA) => {
     if (settings.GET(`DEATHSHOTDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHSHOTINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -202,7 +202,7 @@ EventEmitter.on(`DEATH_SHOT`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_MELEE_PLAYER`, (DATA) => {
+EVENTEMITTER.on(`DEATH_MELEE_PLAYER`, (DATA) => {
     if (settings.GET(`DEATHMELEEPLAYERDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHMELEEPLAYERINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -223,7 +223,7 @@ EventEmitter.on(`DEATH_MELEE_PLAYER`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_MELEE`, (DATA) => {
+EVENTEMITTER.on(`DEATH_MELEE`, (DATA) => {
     if (settings.GET(`DEATHMELEEDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHMELEEINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -239,7 +239,7 @@ EventEmitter.on(`DEATH_MELEE`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_STATS`, (DATA) => {
+EVENTEMITTER.on(`DEATH_STATS`, (DATA) => {
     if (settings.GET(`DEATHSTATSDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHSTATSINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -257,7 +257,7 @@ EventEmitter.on(`DEATH_STATS`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_SUICIDE`, (DATA) => {
+EVENTEMITTER.on(`DEATH_SUICIDE`, (DATA) => {
     if (settings.GET(`DEATHSUICIDEDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHSUICIDEINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -269,7 +269,7 @@ EventEmitter.on(`DEATH_SUICIDE`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DEATH_BLEEDING`, (DATA) => {
+EVENTEMITTER.on(`DEATH_BLEEDING`, (DATA) => {
     if (settings.GET(`DEATHBLEEDINGDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DEATHBLEEDINGINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -284,7 +284,7 @@ EventEmitter.on(`DEATH_BLEEDING`, (DATA) => {
     };
 });
 
-EventEmitter.on(`PLACEMENT`, (DATA) => {
+EVENTEMITTER.on(`PLACEMENT`, (DATA) => {
     if (settings.GET(`PLACEMENTDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`PLACEMENTINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -300,7 +300,7 @@ EventEmitter.on(`PLACEMENT`, (DATA) => {
     };
 });
 
-EventEmitter.on(`BUILT`, (DATA) => {
+EVENTEMITTER.on(`BUILT`, (DATA) => {
     if (settings.GET(`BUILTDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`BUILTINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -317,7 +317,7 @@ EventEmitter.on(`BUILT`, (DATA) => {
     };
 });
 
-EventEmitter.on(`DISMANTLED`, (DATA) => {
+EVENTEMITTER.on(`DISMANTLED`, (DATA) => {
     if (settings.GET(`DISMANTLEDDISCORDWEBHOOKS`) == true) {
         try {
             const PLAYERTEXT = `${languages.TRANSLATE(`PLAYER`)}`.replace(`#INLINE#`, settings.GET(`PLAYERINLINE`) || settings.GET(`DISMANTLEDINLINE`)).replace(`#PLAYER#`, DATA.PLAYER);
@@ -334,7 +334,7 @@ EventEmitter.on(`DISMANTLED`, (DATA) => {
     };
 });
 
-EventEmitter.on(`PLAYER_LIST`, (DATA) => {
+EVENTEMITTER.on(`PLAYER_LIST`, (DATA) => {
     if (settings.GET(`PLAYERLISTDISCORDWEBHOOKS`) == true) {
         try {
             let BUFFER = [];
@@ -356,4 +356,4 @@ EventEmitter.on(`PLAYER_LIST`, (DATA) => {
     };
 });
 
-module.exports = EventEmitter;
+module.exports = EVENTEMITTER;
