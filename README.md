@@ -49,7 +49,7 @@
     <li><a href="#liste-des-dépendances">Liste des dépendances</a></li>
 </ul>
 
-<h1>Non testé avec des événements plus récent que la version 1.02 !!!</h1>
+<h1>Testé avec les événements de la version 1.13 !!!</h1>
 
 <a name="à-propos"></a>
 <h2>À propos - <a href="#prérequis">suivant</a> | <a href="#bottom">fin</a></h2>
